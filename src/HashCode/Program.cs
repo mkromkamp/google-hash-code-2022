@@ -3,15 +3,15 @@ using HashCode.Parsers;
 
 Console.WriteLine("Hello, World!");
 
-foreach (var input in Directory.EnumerateFiles("_input/"))
+foreach (var file in Directory.EnumerateFiles("_input/"))
 {
-    Console.WriteLine($"Solving {input}");
+    Console.WriteLine($"Solving {file}");
     
-    var challenge = new Input().Parse(input);
+    var challenge = new Input().Parse(file);
     var solution = Solutution.SolveChallenge(challenge);
     
     Console.WriteLine($"Estimated score {solution.Score()}");
-    new Output().Write(solution);
+    new Output().Write(solution, Path.GetFileName(file));
 }
 
 Console.WriteLine("All done :)");
