@@ -27,13 +27,13 @@ Team; Three and a quarter
 
 ## Submitting the solution
 
+Running the code will create the solution files:
+- Install [.NET6 SDK]()
+- `dotnet run --project ./src/HashCode`
+
 In order to zip up all, relevant, source code:
 - Install [zip]()
 - `chmod +x ./create_zip.sh` (only first time)
 - `./create_zip`
-
-Running the code will create the solution files:
-- Install [.NET6 SDK]()
-- `dotnet run -p ./src/HashCode`
 
 Happy coding 😃 
