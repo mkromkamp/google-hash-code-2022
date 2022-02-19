@@ -1,6 +1,6 @@
 namespace HashCode;
 
-public class Challenge
+public partial class Challenge
 {
 
 }

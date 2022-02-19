@@ -1,6 +1,6 @@
 namespace HashCode;
 
-public class Solutution
+public partial class Solutution
 {
     public static Solutution SolveChallenge(Challenge challenge)
     {
