@@ -1,6 +1,4 @@
-# HashCode 2022
-
-Team; Three and a quarter
+# HashCode 2022 - [Three and a quarter]
 
 - [Andy Cornforth](https://github.com/andycornforth)
 - [James Lappin](https://github.com/James-Lappin)
