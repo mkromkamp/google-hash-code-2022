@@ -1,8 +1,8 @@
 namespace HashCode;
 
-public partial class Solutution
+public partial class Solution
 {
-    public static Solutution SolveChallenge(Challenge challenge)
+    public static Solution SolveChallenge(Challenge challenge)
     {
         return new();
     }
