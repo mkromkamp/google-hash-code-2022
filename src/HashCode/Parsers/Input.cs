@@ -10,8 +10,6 @@ public class Input
     {
         // TODO; Parse input file and return Challenge
 
-        file = "_input/a_an_example.in.txt";
-        
         var fileLines = File.ReadLines(file).ToArray();
         var challenge = new Challenge();
 
