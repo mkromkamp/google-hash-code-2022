@@ -40,7 +40,7 @@ public partial class Solution
 
         return new Solution
         {
-            Projects = new Dictionary<string, List<string>>()
+            Projects = projects
         };
     }
 
