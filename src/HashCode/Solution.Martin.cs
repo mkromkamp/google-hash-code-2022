@@ -24,7 +24,7 @@ public partial class Solution
             {
                 // Don´t look for the skill of the mentor
                 var remainingSkills = project.RequiredSkills.Where(s => !s.Name.Equals(mentor.Item2.Name)).ToList();
-                var remainingContributor = challenge.Contributors.Where(s => s.Name.Equals(mentor.Item1.Name)).ToList();
+                var remainingContributor = challenge.Contributors.Where(s => !s.Name.Equals(mentor.Item1.Name)).ToList();
 
                 // Look to fill remaining roles with mentee
                 // If we don´t find a mentee for all remaining roles skip the project
@@ -83,7 +83,7 @@ public partial class Solution
                     continue;
 
                 // If skill is equal or less than required, become mentee
-                if (availableSkill.Level < requiredSkill.Level)
+                if (availableSkill.Level >= requiredSkill.Level)
                 {
                     mentee.Add(contributor);
                 }
