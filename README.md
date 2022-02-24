@@ -34,4 +34,4 @@ In order to zip up all, relevant, source code:
 - `chmod +x ./create_zip.sh` (only first time)
 - `./create_zip`
 
-Happy coding 😃 
+Happy coding 😃 😃
