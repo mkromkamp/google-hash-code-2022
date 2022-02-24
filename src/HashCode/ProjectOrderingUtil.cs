@@ -21,6 +21,11 @@ namespace HashCode
 
         }
 
+        public static List<Project> OrderBySkillReq(List<Project> inputProjects)
+        {
+            return inputProjects.OrderBy(p => p.RequiredSkills.Sum(s => s.Level)).ToList();
+        }
+
         private static double GetPPDPR(Project p)
         {
             return (p.Points / p.DaysToComplete) /(double)p.RequiredSkills.Count();
