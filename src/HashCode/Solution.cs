@@ -2,7 +2,7 @@ namespace HashCode;
 
 public partial class Solution
 {
-    public static Solution SolveChallenge(Challenge challenge)
+    public virtual Solution SolveChallenge(Challenge challenge)
     {
         return new();
     }
