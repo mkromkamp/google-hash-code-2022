@@ -11,7 +11,7 @@ foreach (var file in Directory.EnumerateFiles("_input/"))
     var solution = new Solution().SolveMartin(challenge);
     
     Console.WriteLine($"Estimated score {solution.Score()}");
-    new Output().Write(solution, Path.GetFileName(file));
+    await new Output().Write(solution, Path.GetFileName(file));
 }
 
 Console.WriteLine("All done :)");
