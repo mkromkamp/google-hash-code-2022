@@ -11,6 +11,6 @@ public class Output
 
         // TODO: Write output to file
         var outputFileName = Path.Join(dir, fileName);
-        await File.WriteAllLinesAsync(outputFileName, new[] { "Some", "Solution" });
+        await File.WriteAllLinesAsync(outputFileName, OutputUtil.OutputToListOfLines(solution.Projects));
     }
 }

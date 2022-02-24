@@ -8,7 +8,7 @@ public partial class Solution
     {
         var projects = new Dictionary<string, List<string>>();
         
-        foreach (var project in ProjectOrderingUtil.OrderProjectByPPDPR(challenge.Projects))
+        foreach (var project in challenge.Projects)
         {
             var contributors = new List<string>();
             
