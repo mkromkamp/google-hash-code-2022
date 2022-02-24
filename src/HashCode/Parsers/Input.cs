@@ -34,4 +34,13 @@ public class Input
         public string Name { get; set; }
         public List<Skill> Skills { get; set; }
     }
+
+    public class Project
+    {
+        public string Name { get; set; }
+        public int DaysToComplete { get; set; }
+        public int Points { get; set; } //means prizes
+        public int DaysBeforeBestBefore { get; set; }
+        public List<Skill> RequiredSkills { get; set; }
+    }
 }
